@@ -30,33 +30,31 @@ body {
 	padding-top: 18.73px;
  }
 
-.header-nav{
-	display: flex;
-	align-items: center;
+.header-btn {
+  display: flex;
+  align-items: center;
 }
 
-.header-nav__burger-close{
-	width: 40px;
-	height: 40px;
+.btn-group{
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.header-btn__burger-close{
 	background-image: url("../img/header-1.5/burger.svg");
-	border: none;
-	background-color: white;
-	cursor: pointer;
 	margin-left: 24px;
   padding: 0;
 }
 
-.header-nav__logo{
+.header__logo{
 	margin-left: 16.73px;
 }
 
-.header-nav__search{
-	width: 40px;
-	height: 40px;
-    background-image: url("../img/header-1.5/search.svg");
-    border: none;
-	background-color: white;
-	cursor: pointer;
+.header-btn__search{
+  background-image: url("../img/header-1.5/search.svg");
 	margin-left: 78.73px;
 	padding: 0;
 }
@@ -80,7 +78,7 @@ body {
    background-image: url("../img/main_block/highlight.svg") 
 }*/
 
-.main-nav__item-current {
+.main-nav__item--active{
  display: flex;
  align-items: center;
  color: #7E7E82;
@@ -92,7 +90,7 @@ body {
  font-style: normal;
 }
 
-.main-nav__item-current::before {
+.main-nav__item--active::before {
 	content: "";
 	margin-right: 24px;
 	width: 4px;
@@ -128,32 +126,17 @@ body {
 }
 
 .footer-btn__call {
-width: 40px;
-height: 40px;
 background-image: url("../img/header-1.5/chat copy.svg");
-border: none;
-background-color: white;
-cursor: pointer;
 margin-left: 24px;
 }
 
 .footer-btn__chat {
-width: 40px;
-height: 40px;
 background-image: url("../img/header-1.5/chat.svg");
-border: none;
-background-color: white;
-cursor: pointer;
 margin-left: 16px;
 }
 
 .footer-btn__profile{
-width: 40px;
-height: 40px;
 background-image: url("../img/header-1.5/profile.svg");
-border: none;
-background-color: white;
-cursor: pointer;
 margin-left: 16px;
 }
 
@@ -191,7 +174,7 @@ font-style: normal;
 	margin-bottom: 32px;
 }
 
-.footer-translate__lang-current {
+.footer-translate__lang--active {
  width: 24px;
  height: 24px;
  color: #7E7E82;
@@ -222,6 +205,15 @@ font-style: normal;
 button:hover {
  transition-duration: 1s;
  transform: scale(1.2);
+ box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+ color: #000;
+ background-color: #41F6D7;
+ border-radius: 10px;
+}
+
+img:hover, a:hover {
+ transition-duration: 1s;
+ transform: scale(1);
  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4);
  color: #000;
  background-color: #41F6D7;
