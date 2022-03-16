@@ -6,9 +6,9 @@ let mySwapper;
 function mobileSlider() {
 	if(window.innerWidth <= 767 && slider.dataset.mobile == 'false') {
       mySwapper = new Swiper(slider, {
-         slidesPerView: 1.2,
-         spaceBetween: 16,
-         loop: true,
+        slidesPerView: 'auto',
+         spaceBetween: 10,
+         loop: false,
          slideClass: 'card', 
          pagination: {
             el: '.swiper-pagination',
