@@ -27,7 +27,8 @@ body{
    margin:  0 auto;
 }
 
-/*-----------------------------------------------ШАПКА---------------*/
+/*---------HEADER---------*/
+
 .brand-repair {
 	width: 100%;
 	min-height: 80px;
@@ -112,7 +113,7 @@ background-color: #B5B6BC;
  .card {
    width: 240px !important;
    background-repeat: no-repeat;
-   height: 72px;
+   height: 160px;
    flex-shrink: 0;
    margin-right: 2.5%;
    margin-bottom: 2.5%;
@@ -121,25 +122,28 @@ background-color: #B5B6BC;
    cursor: pointer;
    padding: 0;
    overflow: hidden;
+   box-sizing: content-box;
    }
 
   @media (min-width: 767px) {
     .card {
   	    width: 231px !important;
+        margin-right: 15px;
   }
  }
 
-  @media (min-width: 1027px) {
+  @media (min-width: 1017px) {
     .card {
-      margin-right: 50px;
+      margin-right: 42px;
   }
  }
 
   @media (min-width: 1120px) {
     .card {
-       margin-right: 16px;
+       margin-right: 10px;
        width: 240px !important;
        margin-left: 16px;
+    /*   margin-right: 20px*/
   }
  }
 
@@ -147,29 +151,29 @@ background-color: #B5B6BC;
 .modal {
   display: none;
   position: relative;
-  width: 231px;
+  width: 228px;
   background-repeat: no-repeat;
-  height: 72px;
+  height: 160px;
   flex-shrink: 0;
-  margin-right: 2.5%;
+  margin-right: 15px;
   margin-bottom: 2.5%;
   border-radius: 6px;
   border: 2px solid #EAEAEA;
  }
 }
 
-  @media (min-width: 1027px) {
+  @media (min-width: 1017px) {
   .modal {
-  margin-right: 50px;
+  margin-right: 42px;
 
   }
  }
 
   @media (min-width: 1120px) {
   .modal {
-  margin-right: 16px;
+ /* margin-right: 16px;*/
    width: 240px;
-   padding-left: 16px;
+   margin-right: 10px;
   }
  }
 
@@ -177,38 +181,21 @@ background-color: #B5B6BC;
   display: block;
 }
 
-.lenovo {
-  background-image: url('../img/1.5/lenovo.svg');
+.laptop {
+  background-image: url('../img/swiper2.1.6/cat1.svg');
 }
 
-.samsung {
-	background-image: url('../img/1.5/samsung.svg');
+.tablet {
+	background-image: url('../img/swiper2.1.6/cat2.svg');
 }
 
-.apple {
-  background-image: url('../img/1.5/apple.svg');
+.pc {
+  background-image: url('../img/swiper2.1.6/cat3.svg');
 }
 
-.sonic {
-  background-image: url('../img/1.5/sonic.svg');
+.screen {
+  background-image: url('../img/swiper2.1.6/cat4.svg');
 }
-
-.bosch {
-   background-image: url('../img/1.5/bosch.svg');
-}
-
-.hp {
-	background-image: url('../img/1.5/hp.svg');
-}
-
-.acer {
-	background-image: url('../img/1.5/acer.svg');
-}
-
-.sony {
-	background-image: url('../img/1.5/sony.svg');
-}
-
 
 /*КНОПКИ SHOW AND HIDE*/
 

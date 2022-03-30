@@ -1,0 +1,90 @@
+.aside-btn {
+  display: flex;
+  align-items: center;
+}
+
+.btn-group{
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.burger-close{
+  background-image: url("../img/header-1.5/burger.svg");
+  margin-left: 24px;
+  padding: 0;
+  border-radius: 50px;
+}
+
+.btn-search{
+  background-image: url("../img/header-1.5/search.svg");
+  margin-left: 78.73px;
+  padding: 0;
+}
+
+.footer-btn {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+  &__call {
+    background-image: url("../img/header-1.5/chat copy.svg");
+    margin-left: 24px;
+  }
+  &__chat {
+    background-image: url("../img/header-1.5/chat.svg");
+    margin-left: 16px;
+  }
+  &__profile {
+    background-image: url("../img/header-1.5/profile.svg");
+    margin-left: 16px;
+  }
+}
+
+.footer-translate {
+  margin-left: 24px;
+  margin-bottom: 32px;
+  &__lang--active {
+    width: 24px;
+    height: 24px;
+    color: $add-font-color;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    padding: 0;
+    font-family: "TT Lakes";
+    font-weight: 500;
+    font-style: normal;
+  }
+  &__lang {
+    width: 24px;
+    height: 24px;
+    color: $main-font-color;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0;
+    font-family: "TT Lakes";
+    font-weight: 500;
+    font-style: normal;
+  }
+}
+.btn-hover:hover {
+  transition-duration: 1s;
+  transform: scale(1.2);
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  color: $black-color;
+  background-color: $navigation-color;
+  border-radius: 10px;
+}
+.image-aside:hover, .link-aside:hover {
+  transition-duration: 1s;
+  transform: scale(1);
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  color: $black-color;
+  background-color: $navigation-color;
+  border-radius: 10px;
+}

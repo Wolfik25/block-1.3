@@ -1,0 +1,29 @@
+@import '_vars.scss';
+@import './header/header.scss';
+@import './scroll/scroll.scss';
+@import './about-company/about-company.scss';
+@import './title/title.scss';
+@import './background-img/background-img.scss';
+@import './swiper/swiper.scss';
+@import './aside/aside.scss';
+@import './button/button.scss';
+@import './offer/offer.scss';
+@import './footer/footer.scss';
+@import '_fonts.scss';
+
+
+body {
+  margin: 0;
+  background-color: $main-color;
+  @media (min-width: 1120px){
+  	display: flex;
+  }
+}
+.page {
+  max-width: 1120px;
+  background-color: $main-bgc ;
+  margin: 0 auto;
+}
+
+
+

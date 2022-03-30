@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styleFeedback.css">
+  <title>Feedback</title>
+</head>
+<body>
+  <aside class="callback">
+
+<form action="#" class="modal modal--callback">
+  <button
+    type="button"
+    class="rounded-button rounded-button--icon rounded-button--icon--close rounded-button--modal">
+    Закрыть окно заказа обратного звонка
+  </button>
+  <div class="container">
+    <h3 class="modal__title title">Заказать звонок</h3>
+    <input type="tel" class="modal__input" name="user-phone" pattern="[+]{1}[0-9]{11,14}" placeholder="Телефон">
+    <p class="modal__personal-policy">
+      Нажимая “отправить”, вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с нашей
+      <a href="#">политикой конфиденциальности</a>
+    </p>
+    <button type="submit" class="order-button order-button--modal order-button--modal--right">Отправить</button>
+  </div>
+</form>
+ </aside>
+<script src = '../js/scriptCallback.js' ></script>
+</body>
+</html>

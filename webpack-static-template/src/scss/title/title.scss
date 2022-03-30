@@ -1,0 +1,69 @@
+.main-block {
+  max-width: 1120px;
+  background-color: $main-bgc;
+  width: 100%;
+  left: 0px;
+  top: 88px;
+  margin: 0 auto;
+  @media (min-width: 1121px) {
+    margin-top: -75px;
+  }
+}
+
+.title-main {
+  display: flex;
+  width: 304px;
+  height: 40px;
+  justify-content: flex-start;
+  align-items: center;
+  top: calc(50% - 40px / 2 - 166.5px);
+  margin: 24px 0 24px 0;
+  gap: 12px;
+  @media (min-width: 768px) {
+    gap: 20px;
+  }
+  @media (min-width: 1120px) {
+    gap: 30px;
+    margin-top: -50px;
+  }
+  &__heading {
+    color: $main-font-color;
+    width: 288px;
+    font-size: 28px;
+    line-height: 40px;
+    font-family: "TT Lakes";
+    font-weight: 800;
+    font-style: normal;
+  }
+  &__highlight {
+    width: 4px;
+    height: 40px;
+    color: $navigation-color;
+    background-image: url("../img/main_block/highlight.svg");
+  }
+}
+
+// ---------------title brand-----
+.brand-repair {
+  width: 100%;
+  min-height: 80px;
+  background: linear-gradient(to right, $main-color 40%, $white-color 100%);
+  background-color: $white-color;
+  border-top: 2px solid $border-title-top;
+  margin-bottom: 16px;
+  &__title {
+    font-size: 20px;
+    font-family: "TT Lakes";
+    font-weight: normal;
+    font-style: normal;
+    color: $add-font-color;
+    padding: 16px;
+    margin: 0;
+    @media (min-width: 768px) {
+      padding-left: 24px;
+    }
+    @media (min-width: 1120px) {
+      padding-left: 40px;
+    }
+  }
+}

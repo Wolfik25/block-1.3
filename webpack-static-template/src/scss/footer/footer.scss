@@ -1,0 +1,50 @@
+/*-----------FOOTER-----------*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-top: 40px;
+    text-align: center;
+    border-top: 2px solid #D9FFF5;
+    color:  #7E7E82;
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    &__trademark {
+      text-align: center;
+        @media (min-width: 768px) {
+          text-align: start;
+          margin-left: 8px
+        }
+    }
+    &__privacy-policy {
+      text-decoration: none;
+      color: #7E7E82;
+    }
+    &__info {
+        @media (min-width: 768px) {
+          width: 213px;
+          height: 48px;
+          text-align: end;
+          margin-right: 24px
+        }  
+        @media (min-width: 1120px) {
+          width: 330px;
+          height: 32px;
+          text-align: end;
+          margin-right: 24px
+        }
+    }
+}
+
+.footer__privacy-policy:hover, .offer-get:hover:after,.offer-get:hover, .card3__button:hover {
+ transition-duration: 1s;
+ transform: scale(1);
+ box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+ color: #000;
+ background-color: #41F6D7;
+ border-radius: 5px;
+}

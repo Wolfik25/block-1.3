@@ -1,0 +1,199 @@
+.header {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 85.26%;
+  @media (max-width: 1119px) {
+    background-color: white;
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    flex-wrap: nowrap;
+    min-height: 88px;
+    align-items: center;
+    padding: 0;
+    @media (min-width: 1121px) {
+      z-index: 1;
+      margin-bottom: 4px;
+    }
+  }
+}
+
+.left-nav__burger {
+  margin-right: 16.73px;
+  margin-left: 16px;
+  background-image: url("../img/menu_header/burger1.svg");
+  min-width: 40px;
+  min-height: 40px;
+  border: none;
+  background-color: $white-color;
+  cursor: pointer;
+  padding: 0;
+  @media all and (min-width: 1120px) {
+    display: none;
+  }
+}
+
+.left-nav__logo {
+  margin-right: 16.73px;
+  @media all and (min-width: 768px) and (max-width: 1120px) {
+    display: flex;
+    order: 3;
+    margin-left: 20px;
+  }
+  @media all and (min-width: 1120px) {
+    display: none;
+  }
+}
+.right-nav__repair {
+  margin-left: 20px;
+  margin-right: 16px;
+  @media all and (min-width: 1120px) {
+    width: 40px;
+    margin-left: 8px;
+    margin-right: 32px;
+  }
+  &-status {
+    font-family: "TT Lakes";
+    font-weight: 500;
+    font-style: normal;
+    margin-right: 9px;
+    white-space: nowrap;
+  }
+}
+
+.right-nav__check {
+  margin-right: 16px;
+}
+.left-nav__divider-left {
+  display: flex;
+  order: 2;
+  width: 2px;
+  height: 32px;
+  background: $divider-color;
+  background-image: url("../img/menu_header/divider.svg");
+  @media all and (min-width: 1120px) {
+    display: none;
+  }
+}
+
+.right-nav__button-call {
+  background-image: url("../img/menu_header/call.svg");
+  min-width: 40px;
+  min-height: 40px;
+  border: none;
+  background-color: $white-color;
+  cursor: pointer;
+  padding: 0;
+  @media all and (max-width: 768px), (min-width: 1120px) {
+    display: none;
+  }
+}
+
+.right-nav__button-chat {
+  background-image: url("../img/menu_header/chat.svg");
+  min-width: 40px;
+  min-height: 40px;
+  border: none;
+  background-color: $white-color;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+@media all and (max-width: 768px), (min-width: 1120px) {
+  .right-nav__chat {
+    display: none;
+  }
+}
+.right-nav__button-profile {
+  background-image: url("../img/menu_header/profile.svg");
+  min-width: 40px;
+  min-height: 40px;
+  border: none;
+  background-color: $white-color;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 20px;
+}
+@media all and (max-width: 768px), (min-width: 1120px) {
+  .right-nav__profile {
+    display: none;
+  }
+}
+.right-nav__divider-right {
+  width: 2px;
+  height: 32px;
+  background: $divider-color;
+  background-image: url("../img/menu_header/divider.svg");
+  @media all and (max-width: 768px), (min-width: 1120px) {
+    display: none;
+  }
+}
+
+.right-nav__application {
+  font-family: "TT Lakes";
+  font-weight: 500;
+  font-style: normal;
+  white-space: nowrap;
+  @media all and (max-width: 1120px) {
+    display: none;
+  }
+  @media all and (min-width: 1120px) {
+    display: block;
+    width: 125px;
+    height: 24px;
+  }
+}
+
+.right-nav__button-repair {
+  background-image: url("../img/menu_header/repair.svg");
+  min-width: 40px;
+  min-height: 40px;
+  border: none;
+  background-color: $white-color;
+  cursor: pointer;
+  padding: 0;
+  @media all and (min-width: 1120px) {
+    width: 40px;
+    margin-left: 0px;
+  }
+  &:hover {
+    transition-duration: 1s;
+    transform: scale(1);
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    color: #000;
+    background-color: $navigation-color;
+    border-radius: 5px;
+  }
+}
+.right-nav__repair-status {
+  @media all and (max-width: 1120px) {
+    display: none;
+  }
+  @media all and (min-width: 1120px) {
+    display: block;
+    width: 119px;
+    height: 24px;
+  }
+}
+
+.right-nav__button-check {
+  background-image: url("../img/menu_header/checkstatus.svg");
+  min-width: 40px;
+  min-height: 40px;
+  border: none;
+  background-color: $white-color;
+  cursor: pointer;
+  padding: 0;
+  &:hover {
+    transition-duration: 1s;
+    transform: scale(1);
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    color: #000;
+    background-color: $navigation-color;
+    border-radius: 5px;
+  }
+}
